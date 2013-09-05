@@ -1,7 +1,18 @@
-<h1>Pictures (<%= @pictures.length %>)</h1>
-<%= link_to "New Picture", "/pictures/new" %>
+
+<div class="header">
+<h1>ChalkyBrush's Image Warehouse</h1>
+</div>
+
+<p><%= link_to "Submit a New Picture", "/pictures/new" %></p>
 
 <%- @pictures.each do |picture| %>
-  <p><%= picture[:title] %>, <%= picture[:artist] %></p>
-  <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+<div class="picturecard">
+<br>
+  <li class="title"><%= picture[:title] %></li>
+  <li class ="author"><%= picture[:artist] %></li>
+  <%= link_to image_tag(picture.url), "/pictures/#{picture.id}", :class => "index" %>
+ </div>
+ 
 <% end %>
+
+ <p><%= link_to "Return to Top", "/pictures" %></p>
