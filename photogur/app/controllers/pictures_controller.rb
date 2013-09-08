@@ -49,9 +49,9 @@ class PicturesController < ApplicationController
   end
 
   def filter
-    @pictures = Picture.find(params[:category])
+    @pictures = Picture.where(category: params[:category])
+   # @pictures = Picture.where(category: 'People')
   end
-
 
 
 end

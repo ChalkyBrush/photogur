@@ -1,6 +1,6 @@
 <%
 pics = Picture.order("created_at DESC")
-@newest_pictures = pics.limit(12)
+@newest_pictures = pics.limit(24)
 %>
 
 <li class="pageinfo"></li>
@@ -14,5 +14,3 @@ pics = Picture.order("created_at DESC")
  </div>
  
 <% end %>
-
- <p><%= link_to "Return to Top", "/pictures" %></p>

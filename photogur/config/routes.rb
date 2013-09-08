@@ -12,10 +12,13 @@ Photogur::Application.routes.draw do
 
   # get 'pictures/:id' => 'pictures#show', as: "picture"
 
+  get 'pictures/filter/:category' => 'pictures#filter'
   resources :pictures
   root :to => "pictures#index"
 
-  get 'pictures/:category' => 'pictures#filter', as: "picture"
+
+
+  
 
   
   # The priority is based upon order of creation:

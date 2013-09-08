@@ -23,7 +23,13 @@
 </div>
 
 <div id="sidebar">
-	<p><%= link_to "Category-People", "/pictures/people", :class=>"category_link" %></p>
+	<li id = "sidebar_header">Categories</li>
+	
+   <% categories=['People', 'Places', 'Nature', 'Space', 'Architecture', 'Design', 'Illustration', 'Food', 'Sports', 'Miscellaneous'].sort %>
+    <% categories.each do |category| %>
+	<div class = "filter_list"><%= link_to "#{category}", "/pictures/filter/#{category}", :class=>"category_link" %></div>
+	<% end %>
+
 </div>
 
 

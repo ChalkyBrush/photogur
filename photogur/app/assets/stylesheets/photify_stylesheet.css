@@ -22,14 +22,14 @@ div#header_bar {
 div#sidebar {
 	position: fixed;
 	display: inline-block;
-	margin-left: -270px;
+	margin-left: -258px;
 	float: left;
 	width: 250px;
 	height: 1000px;
 	background-color: rgb(70, 70, 70);
-	margin-top: -20px;
+	margin-top: -10px;
 	clear: right;
-	box-shadow:inset 0 0 20px #000000;
+	box-shadow:inset 0 0 15px #000000;
 }
 
 div#content {
@@ -51,11 +51,12 @@ div#content {
 	float: right;
 	width: 100px;
 	text-align: center;
-	border-left: 1px solid black;
+	border-left: 2px solid rgba(30,30,30,.4);
 }
 
 .nav_button:hover {
-	box-shadow:inset 0 0 10px #000000;
+	/*box-shadow:inset 0 0 5px rgba;*/
+	background-color: #145A88;
 }
 
 #page_name_div {
@@ -185,4 +186,40 @@ h1 {
 h2 {
 	margin-top: 5px;
 	margin-bottom: 20px;
+}
+
+.category_image {
+	width: 100%;
+	height: 60px;
+
+}
+
+.filter_title {
+	list-style: none;
+	font-size: 32px;
+	text-transform: uppercase;
+	font-family: 'Noto Sans', sans-serif;
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+
+.filter_list {
+	margin-left: 25px;
+	line-height: 40px;
+	width: 250px;
+}
+
+a.category_link {
+	color: rgba(220,220,220,.9);
+	text-transform: none;
+}
+
+#sidebar_header {
+	font-family: 'Noto Sans', sans-serif;
+	line-height: 80px;
+	text-align: center;
+	list-style: none;
+	font-size: 28px;
+	border-bottom: 1px solid rgba(0,0,0.8)
+
 }
