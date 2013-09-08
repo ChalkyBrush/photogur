@@ -4,4 +4,5 @@
 </p>
 <li class="title"><%= @picture[:title] %></li>
 <li class="author"><%= @picture[:artist] %></li>
-<%= image_tag @picture.url %>
+<li class="author"><%= @picture[:category] %></li>
+<%= image_tag(@picture.url, :class => "preview") %>

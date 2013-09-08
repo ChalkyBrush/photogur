@@ -1,10 +1,9 @@
-<%
-pics = Picture.order("created_at DESC")
-@newest_pictures = pics.limit(12)
-%>
+<div class="header">
+<h1>ChalkyBrush's Image Warehouse</h1>
+</div>
 
-<li class="pageinfo"></li>
-<% @newest_pictures.each do |picture| %>
+<li class="pageinfo"><%="#{""}"%>Photos</li>
+<%- @newest_pictures.each do |picture| %>
 <div class="picturecard">
 <br>
   <li class="title"><%= picture[:title] %></li>

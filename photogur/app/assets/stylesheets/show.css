@@ -1,4 +1,6 @@
-img {
+.show {
+    display:block;
+    margin:auto;
 }
 
 

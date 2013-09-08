@@ -1,5 +1,8 @@
+<div id = "add_picture">
+
 <h2>Add a picture</h2>
 <p><%= link_to "Back to Pictures", pictures_url %></p>
+
 
 <%= form_for @picture do |f| %>
   <p>
@@ -15,6 +18,12 @@
     <%= f.text_field "url" %>
   </p>
   <p>
+    <%= f.label "category" %><br>
+    <%= f.select :category, ['People', 'Places', 'Nature', 'Space', 'Architecture', 'Design', 'Illustration', 'Food', 'Sports', 'Miscellaneous'].sort %>
+    </select>
+  </p>
+  <p>
     <%= f.submit "Save" %> 
   </p>
 <% end %>
+</div>

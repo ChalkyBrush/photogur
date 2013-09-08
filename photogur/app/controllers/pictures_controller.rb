@@ -25,7 +25,7 @@ class PicturesController < ApplicationController
   end
 
   def picture_params
-    params.require(:picture).permit(:artist, :title, :url)
+    params.require(:picture).permit(:artist, :title, :url, :category)
   end
   
   def edit
@@ -47,6 +47,11 @@ class PicturesController < ApplicationController
     @picture.destroy
     redirect_to pictures_url
   end
+
+  def filter
+    @pictures = Picture.find(params[:category])
+  end
+
 
 
 end
