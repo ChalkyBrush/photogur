@@ -204,14 +204,20 @@ h2 {
 }
 
 .filter_list {
-	margin-left: 25px;
 	line-height: 40px;
 	width: 250px;
+	/*margin-left: -25px;*/
+}
+
+.filter_list:hover {
+	background-color: rgb(50,50,50);
+
 }
 
 a.category_link {
 	color: rgba(220,220,220,.9);
 	text-transform: none;
+	padding-left: 20px;
 }
 
 #sidebar_header {
