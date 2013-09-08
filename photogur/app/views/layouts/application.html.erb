@@ -13,7 +13,7 @@
 <div id="header_bar">
 
 	<div class ="nav_button">
-		<%= link_to "+ New", "/pictures/new" %>
+		<%= link_to "+ New", "/pictures/new", :class => "nav_text_link"%>
 	</div>
 
 	<div id="page_name_div">
@@ -23,7 +23,7 @@
 </div>
 
 <div id="sidebar">
-	<li id = "sidebar_header">Categories</li>
+	<div id="side_header_div"><li id = "sidebar_header">Categories</li></div>
 	
    <% categories=['People', 'Places', 'Nature', 'Space', 'Architecture', 'Design', 'Illustration', 'Food', 'Sports', 'Miscellaneous'].sort %>
     <% categories.each do |category| %>
